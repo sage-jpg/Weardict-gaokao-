@@ -1,0 +1,64 @@
+<stack class="list">
+    <!-- 一级：词性分组列表 -->
+    <div class="list" if="{{ !showWord }}">
+        <list class="list" ref="listPos" on:swipe="touchmove">
+            <list-item class="title-item">
+                <div class="title-item">
+                    <text class="title">单词笔记</text>
+                    <text class="title-tips">共{{ totalCount }}条</text>
+                </div>
+            </list-item>
+            <list-item class="item" for="{{ groups }}" grab:click="enterPos($idx)">
+                <div class="item background"
+                     style="background-color: {{ RounderBackgroundValue.background }};
+                            border-radius: {{ RounderBackgroundValue.radius }};">
+                    <text class="word">{{ $item.header }}</text>
+                    <text class="part_mean">{{ $item.count }} 词</text>
+                </div>
+            </list-item>
+            <list-item class="empty-item" if="{{ totalCount === 0 }}">
+                <div class="empty-item">
+                    <image src="/common/noresult.png" class="no_result"></image>
+                    <text>还未收藏单词噢</text>
+                </div>
+            </list-item>
+            <list-item class="item" if="{{ !(totalCount === 0) }}" style="height: 80px;"></list-item>
+        </list>
+    </div>
+    <!-- 二级：当前词性下的单词列表 -->
+    <div class="list" if="{{ showWord }}">
+        <list class="list" ref="listWord" on:swipe="touchmove">
+            <list-item class="title-item">
+                <div class="title-item">
+                    <text class="title" @click="backToPos">◀ {{ currentPos }}</text>
+                    <text class="title-tips">共{{ groupWords.length }}条</text>
+                </div>
+            </list-item>
+            <list-item class="item" for="{{ groupWords }}" grab:click="showdetails($idx)" grab:longpress="handleDelete($idx)">
+                <div class="item background"
+                     style="background-color: {{ RounderBackgroundValue.background }};
+                            border-radius: {{ RounderBackgroundValue.radius }};">
+                    <text class="word">{{ $item.words }}</text>
+                    <text class="part_mean">{{ $item.showMean }}</text>
+                </div>
+            </list-item>
+            <list-item class="empty-item" if="{{ groupWords.length === 0 }}">
+                <div class="empty-item">
+                    <text>该词性暂无单词</text>
+                </div>
+            </list-item>
+            <list-item class="item" if="{{ !(groupWords.length === 0) }}" style="height: 80px;"></list-item>
+        </list>
+    </div>
+    <!-- 删除确认对话框 -->
+    <div class="dialog-root-container" grab:click="dialogClick" grab:swipe="dialogSwipe" if="{{ showDialog }}">
+        <div class="dialog-container" grab:click="doNotPropagation">
+            <text class="dialog-title">提示</text>
+            <text class="dialog-text">确认从单词笔记删除该单词？</text>
+            <div class="dialog-button-container">
+                <input type="button" style="background-color : #5EA1FF;" class="dialog-button" grab:click="exitDialog">取消</input>
+                <input type="button" style="margin-left : 12px; background-color : #E84026;" class="dialog-button" grab:click="confirmDelete">确认</input>
+            </div>
+        </div>
+    </div>
+</stack>
