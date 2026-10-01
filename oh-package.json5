@@ -1,0 +1,10 @@
+{
+  "modelVersion": "5.0.0",
+  "name": "weardict-gaokao",
+  "version": "6.4.1",
+  "description": "腕上词典 高考版（维克多词库 + 生词本排序/词性分类 + GT4 图标适配）",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {}
+}
