@@ -1,0 +1,64 @@
+Wrist Dictionary Non-Commercial License v1.0
+Copyright (c) 2026 LaoShui (original author of Weardict)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to use,
+reproduce, modify, and distribute the Software for non-commercial purposes
+only, subject to the following conditions:
+
+1. Definitions
+   "Commercial Use" means any use primarily intended for or directed toward
+   commercial advantage or monetary compensation, including but not limited to:
+   * selling copies of the Software
+   * paid distribution or licensing
+   * providing the Software as a commercial hosted/cloud service
+   * bundling the Software into a commercial product
+
+2. Non-Commercial Use Only
+   The Software may not be used for Commercial Use. You may use, reproduce,
+   modify, and distribute the Software, in source or binary form, solely for
+   personal, educational, or research purposes.
+
+3. Attribution Required
+   Any redistribution of the Software or derivative works must retain:
+   * the above copyright notice
+   * this full license text
+   * a clear acknowledgement of the original author (LaoShui) and contributors
+
+4. Modifications Notice
+   If you modify the Software and distribute the modified version, you must
+   include a prominent notice stating that changes have been made.
+
+5. Third-Party Components
+   This project may incorporate or be based on third-party works. The copyrights
+   and licenses of those components remain with their respective owners.
+
+6. Dictionary Data
+   Any dictionary databases, vocabulary files, or linguistic resources included
+   or referenced by the Software may be subject to separate copyright and
+   licensing terms. Users are solely responsible for complying with those terms.
+
+7. Contributions
+   Unless explicitly stated otherwise, any contribution intentionally submitted
+   for inclusion in the Software shall be licensed under the same terms as this
+   license.
+
+8. No Warranty
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
+
+---
+
+本仓库（Weardict-gaokao · 腕上词典高考版）衍生声明：
+
+1. 本仓库是上述原版应用（laoshuikaixue/Weardict-hmos，作者 LaoShui）的**衍生作品**，
+   整体按上述 **Wrist Dictionary Non-Commercial License v1.0** 授权，**仅限非商业用途**。
+2. 本仓库新增与修改部分：Copyright (c) 2026 **sage**，与整体一致，仅限非商业用途分发。
+3. 已对原版做修改（替换词库为高考词汇、重排生词本词性分类、搜索归一化与连字符词分组兜底、
+   短语检索、键盘空格键、命令行构建脚本等），修改声明详见 README。
+4. **词库数据**（`entry/src/main/js/default/common/dict/` 下 `*.bin`）版权归其原始权利人
+   （维克多英语等），不在本许可范围内，仅供个人学习研究；如权利人认为侵权请联系删除。
+5. 需要**商业授权**请直接联系原作者 LaoShui；本仓库维护者无权授予商业使用权限。
