@@ -1,0 +1,10 @@
+{
+  "name": "weardict-gaokao",
+  "version": "6.4.1",
+  "description": "Weardict gaokao",
+  "main": "",
+  "scripts": {},
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}
