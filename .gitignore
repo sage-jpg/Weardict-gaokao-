@@ -1,0 +1,30 @@
+# 构建产物与本地配置
+build/
+.preview/
+.hvigor/
+node_modules/
+oh_modules/
+*.hap
+*.app
+pack.info
+
+# 本地环境（含 SDK 路径等机器相关配置）
+local.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# 签名与证书（绝不可提交）
+*.p12
+*.p7b
+*.cer
+*.p7
+*.jks
+*.keystore
+
+# 系统与临时文件
+.DS_Store
+Thumbs.db
+*.log
